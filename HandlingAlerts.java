@@ -20,6 +20,5 @@ public class HandlingAlerts
 		driver.findElement(By.cssSelector("#confirmbtn")).click();
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().dismiss();
-
 	}
 }
