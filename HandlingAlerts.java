@@ -9,6 +9,7 @@ public class HandlingAlerts
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		System.out.println(driver.findElement(By.id("name")).isDisplayed()); //Check if web element is present
 		
 		String[] names = {"JC", "Melo"};
 		driver.findElement(By.id("name")).sendKeys(names[0]);
